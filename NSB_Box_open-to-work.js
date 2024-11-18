@@ -2,7 +2,7 @@
 var animBreake = false;
 var currentLink = 0;
 function isEndOf(origin, target){
-    return origin.endsWith(target);
+    return origin.toLowerCase().endsWith(target);
 }
 function checkFileExtension(url, extensions) {
     return extensions.some(ext => isEndOf(url, ext));
